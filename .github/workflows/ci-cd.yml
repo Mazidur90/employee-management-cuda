@@ -1,0 +1,61 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Test
+      run: dotnet test --no-build --verbosity normal --configuration Release
+
+    - name: Publish API
+      run: dotnet publish EmployeeManagement.API/EmployeeManagement.API.csproj --configuration Release --output ./publish/api
+
+    - name: Publish Web
+      run: dotnet publish EmployeeManagement.Web/EmployeeManagement.Web.csproj --configuration Release --output ./publish/web
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: published-apps
+        path: ./publish/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: published-apps
+        path: ./publish/
+
+    - name: Deploy to AWS ECS
+      run: |
+        # AWS CLI commands to deploy to ECS
+        aws ecs update-service --cluster employee-cluster --service employee-service --force-new-deployment
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: us-east-1

@@ -1,0 +1,31 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.tmp
+*.log
+
+# .NET
+*.dll
+*.exe
+*.pdb
+*.cache
+*.lock
+packages/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+.dockerignore
+
+# Secrets
+appsettings.Development.json
+secrets.json

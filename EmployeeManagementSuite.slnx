@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="EmployeeManagement.AI/EmployeeManagement.AI.csproj" />
+  <Project Path="EmployeeManagement.API/EmployeeManagement.API.csproj" />
+  <Project Path="EmployeeManagement.Blockchain/EmployeeManagement.Blockchain.csproj" />
+  <Project Path="EmployeeManagement.Data/EmployeeManagement.Data.csproj" />
+  <Project Path="EmployeeManagement.IoT/EmployeeManagement.IoT.csproj" />
+  <Project Path="EmployeeManagement.Services/EmployeeManagement.Services.csproj" />
+  <Project Path="EmployeeManagement.Tests/EmployeeManagement.Tests.csproj" />
+  <Project Path="EmployeeManagement.Web/EmployeeManagement.Web.csproj" />
+  <Project Path="SchoolMangementSystem.csproj" />
+</Solution>

@@ -1,7 +1,7 @@
 ﻿
 namespace SchoolMangementSystem
 {
-    partial class AddStudentForm
+    partial class AddEmployeeForm
     {
         /// <summary> 
         /// Required designer variable.
@@ -377,13 +377,13 @@ namespace SchoolMangementSystem
             this.label8.TabIndex = 18;
             this.label8.Text = "Status:";
             // 
-            // AddStudentForm
+            // AddEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "AddStudentForm";
+            this.Name = "AddEmployeeForm";
             this.Size = new System.Drawing.Size(875, 575);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

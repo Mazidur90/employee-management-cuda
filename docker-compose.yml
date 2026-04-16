@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: EmployeeManagement.API/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__EmployeeDbConnectionString=Server=db;Database=EmployeeDB;User Id=sa;Password=Your_password123;
+    depends_on:
+      - db
+    networks:
+      - employeemanagement
+
+  web:
+    build:
+      context: .
+      dockerfile: EmployeeManagement.Web/Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - api
+    networks:
+      - employeemanagement
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "Your_password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - employeemanagement
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - employeemanagement
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    networks:
+      - employeemanagement
+
+volumes:
+  sqlserver_data:
+
+networks:
+  employeemanagement:
+    driver: bridge
