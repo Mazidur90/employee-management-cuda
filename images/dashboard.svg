@@ -1,6 +1,84 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="#f0f0f0"/>
-  <text x="50%" y="50%" font-family="Arial" font-size="24" fill="#333" text-anchor="middle">Employee Management Dashboard</text>
-  <text x="50%" y="60%" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Placeholder Screenshot</text>
-  <text x="50%" y="70%" font-family="Arial" font-size="14" fill="#999" text-anchor="middle">Real screenshots to be uploaded</text>
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="60" x2="1320" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2239"/>
+      <stop offset="1" stop-color="#123A5A"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#173A59"/>
+      <stop offset="1" stop-color="#112C45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#35D0BA"/>
+      <stop offset="1" stop-color="#5AA9FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#061220" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" rx="36" fill="url(#bg)"/>
+  <rect x="34" y="34" width="1332" height="832" rx="28" fill="#0E2941" stroke="#294F72" stroke-width="2"/>
+  <rect x="68" y="78" width="250" height="754" rx="24" fill="#0B2033"/>
+  <circle cx="122" cy="128" r="28" fill="url(#accent)"/>
+  <text x="168" y="122" fill="#F3FAFF" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700">Employee Hub</text>
+  <text x="168" y="156" fill="#83A8C6" font-family="Segoe UI, Arial, sans-serif" font-size="18">Realtime control center</text>
+  <rect x="92" y="216" width="202" height="58" rx="16" fill="#14324E"/>
+  <rect x="92" y="292" width="202" height="58" rx="16" fill="#0F273D"/>
+  <rect x="92" y="368" width="202" height="58" rx="16" fill="#0F273D"/>
+  <rect x="92" y="444" width="202" height="58" rx="16" fill="#0F273D"/>
+  <text x="126" y="252" fill="#EAF7FF" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">Dashboard</text>
+  <text x="126" y="328" fill="#7EA4C0" font-family="Segoe UI, Arial, sans-serif" font-size="22">Employees</text>
+  <text x="126" y="404" fill="#7EA4C0" font-family="Segoe UI, Arial, sans-serif" font-size="22">Supervisors</text>
+  <text x="126" y="480" fill="#7EA4C0" font-family="Segoe UI, Arial, sans-serif" font-size="22">Attendance IoT</text>
+  <text x="96" y="790" fill="#83A8C6" font-family="Segoe UI, Arial, sans-serif" font-size="20">Admin session</text>
+  <text x="340" y="122" fill="#F4FBFF" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Professional Simulation Dashboard</text>
+  <text x="340" y="158" fill="#89ADCA" font-family="Segoe UI, Arial, sans-serif" font-size="20">Live staff metrics, AI turnover insights, blockchain state, and IoT office activity</text>
+  <g filter="url(#shadow)">
+    <rect x="340" y="198" width="230" height="128" rx="24" fill="url(#card)"/>
+    <rect x="590" y="198" width="230" height="128" rx="24" fill="url(#card)"/>
+    <rect x="840" y="198" width="230" height="128" rx="24" fill="url(#card)"/>
+    <rect x="1090" y="198" width="230" height="128" rx="24" fill="url(#card)"/>
+  </g>
+  <text x="372" y="240" fill="#8BB2CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Total Employees</text>
+  <text x="372" y="292" fill="#F5FCFF" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">184</text>
+  <text x="622" y="240" fill="#8BB2CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Retention Score</text>
+  <text x="622" y="292" fill="#7FF2A4" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">92%</text>
+  <text x="872" y="240" fill="#8BB2CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">Blockchain Sync</text>
+  <text x="872" y="292" fill="#5AA9FF" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">99.9%</text>
+  <text x="1122" y="240" fill="#8BB2CF" font-family="Segoe UI, Arial, sans-serif" font-size="18">IoT Devices</text>
+  <text x="1122" y="292" fill="#F5FCFF" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">36</text>
+  <g filter="url(#shadow)">
+    <rect x="340" y="356" width="608" height="432" rx="26" fill="url(#card)"/>
+    <rect x="970" y="356" width="350" height="206" rx="26" fill="url(#card)"/>
+    <rect x="970" y="582" width="350" height="206" rx="26" fill="url(#card)"/>
+  </g>
+  <text x="374" y="402" fill="#F3FAFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Department Distribution</text>
+  <text x="998" y="402" fill="#F3FAFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">AI Turnover Risk</text>
+  <text x="998" y="628" fill="#F3FAFF" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Quantum Optimization</text>
+  <polyline points="392,682 472,628 552,646 632,516 712,562 792,440 872,482" fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="392" cy="682" r="8" fill="#35D0BA"/>
+  <circle cx="472" cy="628" r="8" fill="#35D0BA"/>
+  <circle cx="552" cy="646" r="8" fill="#35D0BA"/>
+  <circle cx="632" cy="516" r="8" fill="#35D0BA"/>
+  <circle cx="712" cy="562" r="8" fill="#35D0BA"/>
+  <circle cx="792" cy="440" r="8" fill="#35D0BA"/>
+  <circle cx="872" cy="482" r="8" fill="#35D0BA"/>
+  <text x="394" y="732" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">Eng 46</text>
+  <text x="520" y="732" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">Ops 28</text>
+  <text x="646" y="732" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">HR 18</text>
+  <text x="760" y="732" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">Design 22</text>
+  <rect x="998" y="438" width="292" height="24" rx="12" fill="#1D4566"/>
+  <rect x="998" y="438" width="82" height="24" rx="12" fill="#53E1A8"/>
+  <rect x="998" y="484" width="292" height="24" rx="12" fill="#1D4566"/>
+  <rect x="998" y="484" width="146" height="24" rx="12" fill="#F3C969"/>
+  <rect x="998" y="530" width="292" height="24" rx="12" fill="#1D4566"/>
+  <rect x="998" y="530" width="210" height="24" rx="12" fill="#FF7A7A"/>
+  <text x="998" y="430" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">Low Risk</text>
+  <text x="1108" y="430" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">Medium</text>
+  <text x="1230" y="430" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="16">High</text>
+  <text x="998" y="680" fill="#8CB2CE" font-family="Segoe UI, Arial, sans-serif" font-size="18">Current workforce efficiency</text>
+  <circle cx="1144" cy="718" r="62" fill="none" stroke="#204A6E" stroke-width="16"/>
+  <path d="M1144 656 A62 62 0 1 1 1088 744" fill="none" stroke="url(#accent)" stroke-width="16" stroke-linecap="round"/>
+  <text x="1105" y="730" fill="#F7FCFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">87%</text>
+  <text x="1002" y="774" fill="#7EA4C0" font-family="Segoe UI, Arial, sans-serif" font-size="16">AI suggests reallocating 3 specialists to onboarding.</text>
 </svg>
