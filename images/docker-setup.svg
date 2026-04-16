@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#fff3e0"/>
+  <text x="50%" y="30%" font-family="Arial" font-size="24" fill="#e65100" text-anchor="middle">Docker Compose Setup</text>
+  <rect x="200" y="150" width="120" height="80" fill="#4caf50" stroke="#2e7d32" rx="10"/>
+  <text x="260" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">API</text>
+  <rect x="350" y="150" width="120" height="80" fill="#2196f3" stroke="#0d47a1" rx="10"/>
+  <text x="410" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Web</text>
+  <rect x="500" y="150" width="120" height="80" fill="#ff9800" stroke="#e65100" rx="10"/>
+  <text x="560" y="190" font-family="Arial" font-size="12" fill="white" text-anchor="middle">DB</text>
+  <rect x="275" y="300" width="120" height="80" fill="#9c27b0" stroke="#4a148c" rx="10"/>
+  <text x="335" y="340" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Redis</text>
+  <rect x="425" y="300" width="120" height="80" fill="#607d8b" stroke="#37474f" rx="10"/>
+  <text x="485" y="340" font-family="Arial" font-size="12" fill="white" text-anchor="middle">RabbitMQ</text>
+  <text x="50%" y="500" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Placeholder Docker Containers Visualization</text>
+</svg>

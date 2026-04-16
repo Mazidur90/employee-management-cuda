@@ -15,19 +15,19 @@
 ## Screenshots
 
 ### Professional Simulation Dashboard
-![Employee Management Dashboard](images/dashboard.png)
+![Employee Management Dashboard](images/dashboard.svg)
 *The main dashboard displaying real-time employee statistics, department distribution chart, AI turnover predictions with color-coded risk levels, blockchain synchronization status, IoT device connections, and quantum optimization scores updating every 5 seconds.*
 
 ### Architecture Overview
-![System Architecture](images/architecture.png)
+![System Architecture](images/architecture.svg)
 *High-level architecture diagram showing microservices (API, Web, Mobile), data layer with SQL and blockchain, AI/ML services, IoT integration, and cloud deployment on AWS/Azure.*
 
 ### Docker Compose Setup
-![Docker Containers](images/docker-setup.png)
+![Docker Containers](images/docker-setup.svg)
 *Docker Compose visualization with API, Web, Database, Redis, and RabbitMQ services running in containers.*
 
 ### CI/CD Pipeline
-![GitHub Actions Workflow](images/ci-cd.png)
+![GitHub Actions Workflow](images/ci-cd.svg)
 *GitHub Actions CI/CD pipeline showing build, test, and deployment stages to AWS ECS.*
 
 ## Features
